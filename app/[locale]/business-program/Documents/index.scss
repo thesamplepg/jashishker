@@ -1,0 +1,122 @@
+.bp-documents {
+  background: white;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+
+  .eclipse {
+    width: 400px;
+    height: 400px;
+    bottom: -300px;
+    right: 200px;
+  }
+
+  &_title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--green);
+    text-transform: uppercase;
+  }
+
+  &_list {
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &_document {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    &-title {
+      font-size: 1.1rem;
+      flex-grow: 2;
+      min-width: 150px;
+
+      span {
+        display: block;
+        max-width: 800px;
+      }
+    }
+
+    &-button {
+      background-color: var(--green);
+      padding: 0.5rem 2rem;
+      border-radius: 10px;
+      color: white;
+      font-weight: 700;
+      font-size: 1.2rem;
+      transition: all 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .eclipse {
+      width: 300px;
+      height: 300px;
+      top: -200px;
+      right: -100px;
+      bottom: auto;
+      left: auto;
+    }
+
+    &_title {
+      font-size: 2.5rem;
+    }
+
+    &_document-title {
+      font-size: 1rem;
+    }
+
+    &_document-button {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem 0;
+
+    .eclipse {
+      width: 250px;
+      height: 250px;
+      top: -150px;
+      right: -120px;
+      bottom: auto;
+      left: auto;
+    }
+
+    &_title {
+      font-size: 1.7rem;
+    }
+
+    &_document {
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      &-title {
+        width: 70%;
+        font-size: 0.9rem;
+      }
+
+      &-button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        margin-left: auto;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

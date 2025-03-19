@@ -1,0 +1,297 @@
+.content {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-color: white;
+  justify-content: center;
+  padding-left: var(--pageP) !important;
+  padding-right: var(--pageP) !important;
+  align-items: center;
+
+  .titelContent {
+    width: var(--maxWidth);
+    text-align: left;
+
+    @media screen and (max-width: 1439px) {
+      width: 100% !important;
+      max-width: var(--maxWidth) !important;
+    }
+
+    h1 {
+      font-size: 70px;
+      font-weight: 900;
+      line-height: 88.55px;
+      color: #222222;
+      text-align: left;
+      margin: 0px;
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 909px) {
+      h1 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27.32px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.BlockFrom {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px #d3d3d3 solid;
+
+  .BlockFromInputList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 60px;
+    margin: 0 auto;
+
+    max-width: 744px;
+
+    .imageFroom {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      text-align: center;
+
+      margin: 0 auto;
+      span {
+        background-color: #f0f0f0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .Profil {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        position: relative;
+        align-items: center;
+        border-radius: 100%;
+        border: 1px #d3d3d3 solid;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 700;
+        color: #007aff;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        line-height: 27.32px;
+        text-align: center;
+      }
+    }
+
+    .labelList {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        p {
+          padding: 0;
+          margin: 0;
+          opacity: 70%;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21.86px;
+          text-align: left;
+          color: #222222;
+        }
+
+        input {
+          padding: 14px 16px 14px 16px;
+          border: 1px solid #a0a0a04d;
+          background: #f3f3f3;
+
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 19.03px;
+          text-align: left;
+          color: #222222;
+
+          &:placeholder {
+            opacity: 0.5;
+          }
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          background: #f3f3f3;
+          border: 1px solid #a0a0a04d;
+          padding: 15px;
+
+          label {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            cursor: pointer;
+
+            color: red !important;
+            background-clip: padding-box;
+            filter: grayscale(1);
+
+            input:checked {
+              background-color: #f3f3f3 !important;
+              border: 1px solid #a0a0a04d !important;
+            }
+
+            p {
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 19.03px;
+              text-align: left;
+              color: #222222;
+            }
+          }
+        }
+      }
+
+      .fromLabelTitle {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+          font-size: 18px !important;
+          font-weight: 500;
+          line-height: 24.59px;
+          text-align: left;
+          color: #222222 !important;
+          opacity: 1;
+        }
+        .error {
+          color: red !important;
+        }
+
+        span {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21.86px;
+          text-align: left;
+          color: #838383;
+        }
+      }
+      button {
+        background: #161616;
+
+        padding: 14.27px 15.85px 14.27px 15.85px;
+        gap: 7.93px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 19.03px;
+        color: #ffffff;
+        text-align: center;
+        border: none;
+      }
+    }
+  }
+}
+.error {
+  color: red !important;
+}
+
+@media screen and (max-width: 909px) {
+  .content {
+    padding-top: 81px;
+    .titelContent h1 {
+      margin-bottom: 16px;
+    }
+  }
+  .BlockFrom {
+    border: none;
+    .BlockFromInputList {
+      padding-top: 30px;
+      .imageFroom {
+        span {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .content {
+      padding-top: 69px;
+      .titelContent {
+        text-align: center;
+        h1 {
+          margin-bottom: 16px;
+          text-align: center;
+        }
+      }
+    }
+    .BlockFrom {
+      .BlockFromInputList {
+        padding-top: 0px;
+        .imageFroom {
+          .Profil {
+            width: 100px;
+            height: 100px;
+          }
+          span {
+            width: 100px;
+            height: 100px;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24.59px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .labelList {
+      gap: 14px !important;
+      label {
+        text-align: left;
+        font-size: 15px;
+        input {
+          padding: 14px 16px 14px 16px;
+        }
+      }
+      button {
+        font-size: 16px !important;
+      }
+    }
+    .fromLabelTitle {
+      gap: 14px !important;
+      p {
+        font-size: 15px !important;
+      }
+      span {
+        font-size: 16px !important;
+      }
+    }
+    .error {
+      font-size: 15px !important;
+    }
+  }
+}

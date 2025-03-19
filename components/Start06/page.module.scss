@@ -1,0 +1,258 @@
+.start {
+  margin: 34px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+
+  @media screen and (max-width: 1024px) {
+    margin: 21px 0 60px 0;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 30px 0 74px 0;
+    gap: 25px;
+  }
+
+
+
+  .startBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media screen and (max-width: 600px) {
+      gap: 10px;
+    }
+
+    .startBlockTitle {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 98px;
+
+      @media screen and (max-width: 1024px) {
+        gap: 67px;
+      }
+
+      @media screen and (max-width: 600px) {
+        gap: 35px;
+      }
+
+      span {
+        color: var(--black, #161616);
+        text-align: center;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 50px;
+        }
+
+        @media screen and (max-width: 600px) {
+          font-size: 36px;
+        }
+      }
+
+      h3 {
+        color: #191A1B;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        margin: 0;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 26px;
+        }
+
+        @media screen and (max-width: 600px) {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .startBlockText {
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+      align-items: center;
+      gap: 60px;
+
+      @media screen and (max-width: 1024px) {
+        gap: 20px;
+      }
+
+      @media screen and (max-width: 600px) {
+        grid-template-columns: 12fr;
+        align-items: center;
+        gap: 20px;
+      }
+
+      p {
+        color: var(--Text-color, #222);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 14px;
+        }
+
+
+      }
+
+      .startBlockLink {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        span {
+          color: var(--black, #222);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 19.028px;
+          text-transform: uppercase;
+          margin: 0;
+
+          @media screen and (max-width: 1024px) {
+            font-size: 13px;
+          }
+        }
+
+        a {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-decoration: none;
+          margin: 0;
+
+          @media screen and (max-width: 1024px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .startContent {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    align-items: start;
+    gap: 10px;
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 12fr ;    
+    }
+
+    p {
+      color: var(--Text-color, #222);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      margin: 0;
+      opacity: 0.7;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 600px) {}
+    }
+
+    .startContentRight {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @media screen and (max-width: 1024px) {
+        gap: 10px;
+      }
+      @media screen and (max-width: 600px) {
+        gap: 6px;
+      }
+
+    }
+
+    h5 {
+      color: var(--black, #161616);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 0;
+
+      @media screen and (max-width: 1024px) {
+      font-size: 18px;
+      }
+
+    }
+
+    .startContentList {
+
+      .startContentItem {
+        display: flex;
+        align-items: center;
+        padding: 16px 0px;
+        gap: 16px;
+        border-bottom: 0.793px solid var(--stroke, rgba(160, 160, 160, 0.30));
+        @media screen and (max-width: 1024px) {
+            padding: 10px 0px;
+            gap: 10px;
+
+
+          }
+
+        span {
+          color: #191A1B;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin: 0;
+          @media screen and (max-width: 1024px) {
+              font-size: 14px;
+            }
+        }
+
+
+        .icon {
+          display: flex;
+          min-width: 60px;
+          min-height: 60px;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          border-radius: 50%;
+          border: 1.586px solid var(--black, #222);
+          background: var(--black, #222);
+
+          @media screen and (max-width: 1024px) {
+            min-width: 40px;
+            min-height: 40px;
+          }
+          
+          @media screen and (max-width: 600px) {}
+
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+
+        }
+
+      }
+
+    }
+  }
+
+}

@@ -1,0 +1,113 @@
+:root {
+  --bg: #161616;
+  --green: #50c16c;
+  --light-green: #8dd78d;
+  --pageP: 100px;
+  --maxWidth: 1340px;
+}
+
+@media screen and (max-width: 1260px) {
+  :root {
+    --pageP: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --pageP: 20px;
+  }
+}
+
+body {
+  background-color: var(--bg);
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+a {
+  text-decoration: none;
+}
+
+.JDKLASJDKLAD {
+  background-color: #fff;
+  min-height: 120vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+.Login {
+  cursor: not-allowed !important;
+}
+
+#pulse-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.pulse-chat-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.pulse-chat-window {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.pulse-chat-title {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.pulse-chat-message {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.pulse-chat-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+a[type="button"] {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.swiper-button-prev {
+  color: #585757 !important;
+  background: #ffffff66 !important;
+  padding: 16px !important;
+}
+.swiper-button-next {
+  color: #585757 !important;
+  background: #ffffff66 !important;
+  padding: 16px !important;
+}
+.swiper-pagination {
+  background-color: #ffffff6e !important;
+}

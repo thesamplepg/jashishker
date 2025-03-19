@@ -1,0 +1,179 @@
+.accordion {
+  background: #5E6458;
+
+  .container {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    padding: 100px 30px 100px;
+
+    @media screen and (max-width: 768px) {
+      padding: 30px 20px;
+    }
+
+    .accordionContent {
+      display: flex;
+      flex-direction: column;
+      gap: 57px;
+
+      @media screen and (max-width: 768px) {
+        gap: 30px;
+      }
+    }
+
+    .accordionTitle {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @media screen and (max-width: 600px) {
+        gap: 10px;
+      }
+
+      h5 {
+        color: var(--white, #FFF);
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        margin: 0;
+
+        @media screen and (max-width: 768px) {
+          font-size: 44px;
+        }
+
+        @media screen and (max-width: 600px) {
+          font-size: 30px;
+        }
+      }
+
+      .accordionText {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+      }
+
+      p {
+        color: var(--white, var(--white, #FFF));
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.7;
+        margin: 0;
+        max-width: 806px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+          max-width: 414px;
+        }
+      }
+    }
+
+    .accordionWrap {
+      .accordionCard {
+        padding: 30px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
+        cursor: pointer;
+
+
+        @media screen and (max-width: 600px) {
+          padding: 16px 0;
+        }
+
+        .accordionBlock {
+
+          .accordionCardTitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+
+            @media screen and (max-width: 600px) {
+              gap: 20px;
+            }
+
+            p {
+              color: var(--white, #FFF);
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              max-width: 400px;
+              margin: 0;
+
+              @media screen and (max-width: 768px) {
+                font-size: 22px;
+                max-width: 100%;
+              }
+
+              @media screen and (max-width: 600px) {
+                font-size: 16px;
+              }
+            }
+
+            svg {
+              min-width: 32px;
+              min-height: 32px;
+              color: var(--white, #FFF);
+
+              @media screen and (max-width: 600px) {
+                min-width: 24px;
+                min-height: 24px;
+              }
+            }
+          }
+
+          .accordionCardText {
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            align-items: center;
+            gap: 78px;
+            margin-top: 18px;
+
+            @media screen and (max-width: 768px) {
+              gap: 14px;
+              grid-template-columns: 3fr 9fr;
+
+            }
+
+            @media screen and (max-width: 600px) {
+              grid-template-columns: 12fr;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+
+              @media screen and (max-width: 600px) {
+                display: none;
+              }
+
+            }
+
+            .accordionCardTextBlock {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+
+              p {
+                color: var(--white, #FFF);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0;
+
+                @media screen and (max-width: 768px) {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

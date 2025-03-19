@@ -1,0 +1,90 @@
+.inputFrom {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100% !important;
+  color: var(--black, #161616);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px 0px;
+  border: none;
+  outline: none;
+  background-color: #16161600;
+  border-bottom: 1px solid var(--black, #161616);
+  @media screen and (max-width: 1110px) {
+    padding: 5px 0px;
+  }
+
+  opacity: 1;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+  &:focus {
+    opacity: 1 !important;
+  }
+}
+.error{
+  color: red;
+}
+.inputFroms {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: var(--black, #161616);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 1110px) {
+    gap: 10px;
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  @media screen and (max-width: 1110px) {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .form {
+    gap: 16px;
+  }
+  .inputFrom {
+    gap: 10px !important;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--black, #161616);
+  color: #fff;
+  @media screen and (max-width: 1110px) {
+    padding: 5px 10px;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 10px 25px;
+  }
+}

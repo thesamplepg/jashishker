@@ -1,0 +1,357 @@
+.news {
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 50px;
+
+  .newsContend {
+    padding-top: 80px;
+    padding-left: var(--pageP);
+    padding-right: var(--pageP);
+    padding-bottom: 100px;
+    color: black;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: var(--maxWidth);
+    display: flex;
+    .newsTitel {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        color: var(--Text-color, #222);
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 66px;
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        color: var(--black, #161616);
+        font-size: 38px;
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.3;
+        margin-left: 230px;
+      }
+    }
+    @media screen and (max-width: 960px) {
+      padding-top: 60px !important;
+      .newsTitel {
+        h1 {
+          font-size: 62px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 66px; /* 106.452% */
+          br {
+            display: none !important;
+          }
+        }
+        p {
+          color: var(--black, #161616);
+          font-size: 38px;
+          margin: 0;
+          padding: 0;
+          justify-content: flex-end;
+          display: flex;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        padding-top: 40px !important;
+        .newsTitel {
+          h1 {
+            color: var(--Text-color, #222);
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 44px; /* 104.762% */
+          }
+          p {
+            color: var(--black, #161616);
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .newsBloc1 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 48px;
+
+      .newsBloc1Titel {
+        color: var(--Text-color, #222);
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+      }
+
+      .newsBloc1Main {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 40px;
+      }
+
+      .newsBloc1MainImage {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .mainImageBlock {
+          width: 100%;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      .newsBloc1MainCards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .mainTitelBlock1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .mainTitelBlock1ButtonList {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          ul {
+            display: flex;
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+            li {
+              cursor: pointer;
+              list-style: none;
+              color: var(--Text-color, #222);
+              text-align: center;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              border-radius: 34px;
+              border: 1px solid var(--Text-color, #222);
+              padding: 6px 16px;
+              &:nth-child(2) {
+                background: #da4e38;
+                color: #f0f0f0;
+                border: none;
+              }
+            }
+          }
+          svg {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+          }
+        }
+
+        .mainTitelBlock1Text {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 50px;
+          button {
+            border: none;
+            border-radius: 34px;
+            background: var(--black, #161616);
+
+            display: flex;
+            width: 50px;
+            height: 50px;
+            padding: 6px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            flex-shrink: 0;
+
+            svg {
+              width: 24px;
+              height: 24px;
+              color: #fff;
+            }
+          }
+          h2 {
+            color: var(--black, #161616);
+
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 35px; /* 102.941% */
+            text-transform: capitalize;
+            margin: 0;
+            padding: 0;
+          }
+        }
+        .mianTitelWiews {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          justify-content: flex-end;
+          p {
+            color: var(--black, #161616);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 0;
+            margin: 0;
+            &:nth-child(3) {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 960px) {
+        .newsBloc1Main {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+          .mainTitelBlock1Text button {
+            display: none;
+          }
+        }
+        .newsBloc1MainCards {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+
+        @media screen and (max-width: 600px) {
+          margin-top: 26px;
+
+          .newsBloc1Titel {
+            color: var(--Text-color, #222);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+          .newsBloc1MainImage {
+            display: grid;
+            gap: 25px;
+          }
+          .mainTitelBlock1 {
+            gap: 14px;
+            .mainTitelBlock1ButtonList {
+              ul {
+                li {
+                  color: var(--Text-color, #222);
+                  text-align: center;
+
+                  font-size: 13px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                }
+              }
+            }
+            .mainTitelBlock1Text {
+              h2 {
+                color: var(--black, #161616);
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: capitalize;
+              }
+            }
+            .mianTitelWiews {
+              p {
+                color: var(--black, #161616);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .Tap {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      margin-top: 30px;
+      p {
+        cursor: pointer;
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+      }
+
+      .TopBorder {
+        width: 1px;
+        background-color: #161616;
+      }
+    }
+
+    .newsCards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+  }
+}
+.borderBootm {
+  height: 1px;
+  width: 100%;
+  margin-top: 28px;
+  margin-bottom: 30px;
+  opacity: 0.3;
+  background: #161616;
+  @media screen and (max-width: 960px) {
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 600px) {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.notFound {
+  background-color: #161616;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  p {
+    color: #fff;
+  }
+}

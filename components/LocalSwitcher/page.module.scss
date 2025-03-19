@@ -1,0 +1,21 @@
+.select {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.12px;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #00000000;
+  text-transform: uppercase;
+  option {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.12px;
+    text-align: center;
+    background-color: #0000 !important;
+    cursor: pointer;
+    color: #000;
+  }
+}

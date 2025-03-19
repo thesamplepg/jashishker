@@ -1,0 +1,36 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1304px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+
+  @media screen and (max-width: 1350px) {
+    width: 90%;
+  }
+}
+
+.bp * {
+  box-sizing: border-box;
+}
+
+.bp {
+  overflow: hidden;
+  padding-top: 80px;
+  background: var(--green);
+  position: relative;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}

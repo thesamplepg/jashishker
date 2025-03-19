@@ -1,0 +1,438 @@
+.start03 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 40px;
+  }
+
+  .start03Img {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    @media screen and (max-width: 860px) {
+      height: 400px;
+    }
+
+    @media screen and (max-width: 600px) {
+      height: 800px;
+    }
+
+
+    .ellipse1 {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid var(--black, #161616);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 15%;
+      top: 0;
+
+      @media screen and (max-width: 1140px) {
+        left: 10%;
+      }
+
+      @media screen and (max-width: 1024px) {
+        left: 8%;
+        width: 250px;
+        height: 250px;
+      }
+
+
+      @media screen and (max-width: 860px) {
+        width: 200px;
+        height: 200px;
+        left: 6%;
+        top: 2%;
+      }
+
+      @media screen and (max-width: 600px) {
+        left: 0;
+        top: 14%;
+      }
+
+
+      span {
+        color: var(--black, #161616);
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        max-width: 230px;
+
+        @media screen and (max-width: 860px) {
+          font-size: 14px;
+          max-width: 190px;
+        }
+
+
+      }
+    }
+
+    .ellipse2 {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid var(--black, #161616);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 0px;
+      bottom: -20%;
+
+      @media screen and (max-width: 1024px) {
+          width: 260px;
+          height: 260px;
+        }
+
+
+      @media screen and (max-width: 860px) {
+        width: 220px;
+        height: 220px;
+        left: 0px;
+        bottom: -15%;
+      }
+
+      @media screen and (max-width: 600px) {
+        left: inherit;
+        right: 0;
+        bottom: 0;
+      }
+
+
+      span {
+        color: var(--black, #161616);
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        max-width: 274px;
+
+        @media screen and (max-width: 860px) {
+          font-size: 14px;
+          max-width: 190px;
+        }
+
+
+      }
+    }
+
+    .ellipse3 {
+      width: 310px;
+      height: 310px;
+      position: absolute;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #009345;
+      left: 42%;
+      top: 18%;
+
+      @media screen and (max-width: 1140px) {
+        left: 40%;
+        top: 18%;
+      }
+
+            @media screen and (max-width: 1024px) {
+              width: 280px;
+              height: 280px;
+              left: 39%;
+            }
+
+
+      @media screen and (max-width: 860px) {
+        width: 220px;
+        height: 220px;
+        left: 38%;
+        top: 18%;
+      }
+
+      @media screen and (max-width: 600px) {
+        right: 0;
+        top: 32%;
+        left: inherit;
+      }
+
+
+      span {
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        max-width: 295px;
+        color: #fff;
+
+        @media screen and (max-width: 860px) {
+          font-size: 14px;
+          max-width: 190px;
+        }
+
+
+      }
+    }
+
+    .ellipse4 {
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid var(--black, #161616);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 14%;
+      top: -15%;
+
+      @media screen and (max-width: 1140px) {
+        right: 10%;
+      }
+
+            @media screen and (max-width: 1024px) {
+              width: 220px;
+              height: 220px;
+            }
+
+      @media screen and (max-width: 860px) {
+        width: 180px;
+        height: 180px;
+        right: 9%;
+        top: -20%;
+      }
+
+      @media screen and (max-width: 600px) {
+        right: 0;
+        top: 0;
+      }
+
+
+      span {
+        color: var(--black, #161616);
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        max-width: 230px;
+
+        @media screen and (max-width: 860px) {
+          font-size: 14px;
+          max-width: 178px;
+        }
+
+
+      }
+    }
+
+    .ellipse5 {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid var(--black, #161616);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 2%;
+      bottom: 0px;
+
+      @media screen and (max-width: 1140px) {
+        right: 0%;
+      }
+
+      @media screen and (max-width: 1024px) {
+              width: 250px;
+              height: 250px;
+            }
+
+
+      @media screen and (max-width: 860px) {
+        width: 200px;
+        height: 200px;
+        right: 0;
+        bottom: 0px;
+      }
+
+      @media screen and (max-width: 600px) {
+        left: 0;
+        bottom: 20%;
+      }
+
+
+      span {
+        color: var(--black, #161616);
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        max-width: 230px;
+
+        @media screen and (max-width: 860px) {
+          font-size: 14px;
+          max-width: 188px;
+        }
+
+
+      }
+    }
+
+  }
+
+
+
+  h5 {
+    color: var(--black, #161616);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    max-width: 399px;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 220px;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      max-width: 100%;
+      font-size: 18px;
+    }
+  }
+
+  .start03Text2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  h3 {
+    color: var(--Text-color, #222);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+    max-width: 532px;
+    opacity: 0.7;
+    margin-top: 10px;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 472px;
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 600px) {
+      max-width: 100%;
+      font-size: 14px;
+    }
+  }
+
+  .start03Title {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+    gap: 0;
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: 5.5fr 6.5fr;
+      gap: 18px;
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 12fr;
+      gap: 0;
+      position: relative;
+    }
+
+
+    h4 {
+      color: #191A1B;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+      margin: 0;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 26px;
+        margin-bottom: 90px;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 22px;
+        margin-bottom: 0px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        max-width: 292px;
+      }
+
+    }
+
+    .start03Text {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 20px;
+
+      @media screen and (max-width: 600px) {
+        gap: 80px;
+      }
+
+      span {
+        color: var(--black, #161616);
+        text-align: center;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 50px;
+        }
+
+        @media screen and (max-width: 600px) {
+          font-size: 36px;
+        }
+      }
+
+      p {
+        color: var(--Text-color, #222);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.7;
+        margin: 0;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 14px;
+        }
+
+        @media screen and (max-width: 600px) {
+          margin-left: 12%;
+        }
+      }
+    }
+  }
+
+}

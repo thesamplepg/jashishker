@@ -1,0 +1,168 @@
+.storeBack {
+  width: 100%;
+  background-color: #fff;
+  .heroContainer {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    padding: 0 30px;
+    @media screen and (max-width: 600px) {
+      padding: 0 20px;
+    }
+  }
+  .historyAll {
+    padding-top: 130px;
+    @media screen and (max-width: 464px) {
+      padding-top: 90px;
+    }
+    .stories {
+      h1 {
+        font-size: 80px;
+        font-weight: 900;
+        line-height: 101.2px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        @media screen and (max-width: 824px) {
+          font-size: 50px;
+          font-weight: 900;
+          line-height: 63.25px;
+          text-align: left;
+          br {
+            display: none;
+          }
+          @media screen and (max-width: 600px) {
+            font-size: 34px;
+            font-weight: 900;
+            line-height: 45.25px;
+            text-align: left;
+          }
+        }
+      }
+      ul {
+        padding: 0;
+        display: flex;
+        justify-content: end;
+        margin: 20px 0 30px 0;
+        @media screen and (max-width: 624px) {
+          margin: 10px 0 15px 0;
+        }
+
+        li {
+          width: 700px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27.6px;
+          text-align: left;
+          list-style: none;
+          @media screen and (max-width: 824px) {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19.12px;
+            text-align: left;
+            @media screen and (max-width: 600px) {
+              font-size: 12px;
+              line-height: 15.6px;
+            }
+          }
+        }
+      }
+    }
+    hr {
+      width: 100%;
+      height: 1px;
+      opacity: 0.3;
+      background: #161616;
+      margin: 0;
+    }
+    .gridColump {
+      margin: 60px 0 0 0;
+      padding-bottom: 100px;
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      row-gap: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      @media screen and (max-width: 1290px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media screen and (max-width: 861px) {
+          grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: 504px) {
+          grid-template-columns: 1fr;
+          margin: 30px 0 0 0;
+          padding-bottom: 30px;
+        }
+      }
+      .cardsBlocks {
+        display: grid;
+        column-gap: 60px;
+        position: relative;
+        width: 100%;
+        img {
+          // max-width: 295px;
+          width: 100%;
+          object-fit: cover;
+          height: 300px;
+
+          object-position: top;
+        }
+        .button {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 81%;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+          &:hover {
+            opacity: 1;
+          }
+          @media screen and (max-width: 380px) {
+            height: 80%;
+          }
+          button {
+            padding: 6px 30px;
+            color: #fff;
+            background: #ffffff33;
+            border: 1px solid var(--white, #ffffff);
+            border-radius: 36px;
+          }
+        }
+        .backContext {
+          padding: 10px 16px 16px 16px;
+          border: 0.3px solid #161616;
+          border-color: var(--black, #161616);
+          h2 {
+            margin: 0;
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 25.95px;
+            text-align: left;
+
+            @media screen and (max-width: 744px) {
+              font-size: 20px;
+            }
+          }
+          p {
+            padding-top: 2px;
+            margin: 0;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20.49px;
+            text-align: left;
+
+            @media screen and (max-width: 744px) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

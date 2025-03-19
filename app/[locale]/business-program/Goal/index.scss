@@ -1,0 +1,117 @@
+.bp_target {
+  padding: 4rem 0;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+
+  .container {
+    max-width: 1150px;
+    position: relative;
+    z-index: 10;
+  }
+
+  &-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+  }
+
+  &-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 2rem;
+  }
+
+  &-aim {
+    .content {
+      color: rgba(255, 255, 255, 0.98);
+      background-color: var(--green);
+      padding: 1.2rem 2rem 1.5rem 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      box-shadow: rgba(52, 206, 85, 0.758) 0px 4px 16px;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  &-about {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.7;
+  }
+
+  &-image {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  .eclipse-left {
+    width: 600px;
+    height: 600px;
+    left: -10%;
+    top: 50%;
+  }
+
+  .eclipse-right {
+    width: 400px;
+    height: 400px;
+    right: -13%;
+    top: 10%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &-grid {
+      display: block;
+    }
+
+    &-about {
+      margin-top: 2rem;
+    }
+
+    .eclipse-left {
+      display: none;
+    }
+    .eclipse-right {
+      top: 10%;
+      right: -40%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem 0;
+
+    &-aim {
+      .content {
+        padding: 1rem 1.8rem 1.3rem 1.8rem;
+      }
+    }
+    &-title {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    &-title {
+      font-size: 1.7rem;
+    }
+
+    &-aim .content {
+      font-size: 1.1rem;
+    }
+
+    &-about {
+      font-size: 1rem;
+    }
+  }
+}

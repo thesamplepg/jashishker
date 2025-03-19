@@ -1,0 +1,163 @@
+.NewsCards {
+  width: 100%;
+
+  .NewsCardsImage {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    img {
+      position: relative !important;
+    }
+  }
+
+  .NewsCardsTitel {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+
+    .NewsCardsTitelBlock1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        color: var(--Text-color, #222);
+        text-align: center;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+        display: flex;
+        border-radius: 34px;
+        border: 1px solid var(--Text-color, #222);
+        padding: 6px 16px;
+        justify-content: center;
+        align-items: center;
+        background-color: #0000;
+        gap: 10px;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+    }
+
+    .NewsCardsTitelBlock2 {
+      padding: 0;
+      margin: 0;
+      padding-top: 10px;
+      color: #191a1b;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* Количество строк */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: normal;
+    }
+
+    .NewsCardsTitelBlock3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+
+      .NewsCardsTime {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          color: var(--Text-color, #222);
+
+          font-size: 14px;
+          padding: 0;
+          margin: 0;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+
+      button {
+        display: flex;
+        height: 36px;
+
+        padding: 6px 10px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 34px;
+        background: var(--Text-color, #222);
+        color: #fff;
+        cursor: pointer;
+        border: none;
+
+        svg {
+          font-size: 26px;
+        }
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .NewsCardsTitelBlock1 {
+        button {
+          color: var(--Text-color, #222);
+          text-align: center;
+
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          display: flex;
+          height: 26px;
+          padding: 6px 16px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+        }
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .NewsCardsTitelBlock2 {
+        color: #191a1b;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Количество строк */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+      }
+      .NewsCardsTitelBlock3 {
+        .NewsCardsTime {
+          p {
+            color: var(--black, #161616);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          button {
+            display: flex;
+            height: 36px;
+            padding: 6px 10px;
+            align-items: center;
+            gap: 10px;
+            border-radius: 34px;
+            background: var(--black, #161616);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev  -p 8080",
+    "build": "next build",
+    "start": "next start -p 8080",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^5.16.6",
+    "@react-input/mask": "^1.2.5",
+    "axios": "^1.7.2",
+    "chatbot-widget-ui": "^1.2.1",
+    "classnames": "^2.5.1",
+    "framer-motion": "^11.3.19",
+    "my-app": "file:",
+    "next": "^14.2.5",
+    "next-intl": "^3.17.2",
+    "next-nprogress-bar": "^2.3.13",
+    "react": "^18.3.1",
+    "react-chatbot-kit": "^2.2.2",
+    "react-collapse": "^5.1.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.51.5",
+    "react-icons": "^5.2.1",
+    "react-simple-chatbot": "^0.6.1",
+    "react-toastify": "^10.0.5",
+    "sass": "^1.77.4",
+    "scss": "^0.2.4",
+    "socket.io-client": "^4.7.5",
+    "swiper": "^11.1.12"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "^14.2.3"
+  }
+}

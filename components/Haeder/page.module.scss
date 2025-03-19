@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap");
+
+.Div {
+  width: 100%;
+  background-color: var(--bg);
+  z-index: 1111;
+  position: fixed;
+}
+.haeder {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  color: aliceblue;
+  padding-left: var(--pageP);
+  padding-right: var(--pageP);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--bg);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    height: 49px;
+    width: 50px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    p {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 21.86px;
+      padding: 0;
+      text-align: left;
+    }
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    ul {
+      display: flex;
+      gap: 26px;
+      margin: 0 auto;
+      
+      li {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.86px;
+        text-align: center;
+        list-style: none;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        list-style: none;
+        @media screen and (max-width: 1545px) {
+          font-size: 14px;
+          line-height: 18.9px;
+        }
+      }
+      .Link {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.86px;
+        text-align: center;
+        list-style: none;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        list-style: none;
+      }
+    }
+  }
+  .ButtonList {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    @media screen and (max-width: 547px) {
+      gap: 10px;
+    }
+    p {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21.86px;
+      text-align: center;
+    }
+    button {
+      // width: 108px;
+      height: 36px;
+      // padding: 6px 30px 6px 30px;
+      gap: 10px;
+      border-radius: 36px;
+      border: 1px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21.86px;
+      text-align: center;
+      color: #fff;
+      // border: 1px solid #fff;
+      background-color: #00000000;
+    }
+  }
+  .burgerButton {
+    display: none;
+  }
+
+  @media screen and (max-width: 1478px) {
+    .nav {
+      display: none;
+    }
+    .burgerButton {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      border: none;
+
+      width: 40px !important;
+      justify-self: right;
+      padding: 0 !important;
+      margin: 0 !important;
+      border: none !important;
+      cursor: pointer !important;
+
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    @media screen and (max-width: 460px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      .burgerButton {
+        width: 30px !important;
+      }
+      .logo {
+        gap: 5px;
+        p {
+          color: var(--white, #fff);
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+        img {
+          width: 29.4px;
+          height: 30px;
+        }
+      }
+
+      .ButtonList {
+        gap: 10px;
+        p {
+          color: var(--white, #fff);
+          text-align: center;
+          font-size: 12px;
+          font-style: normal;
+          text-transform: uppercase;
+          font-weight: 500;
+          line-height: normal;
+        }
+        button {
+          padding: 0 !important;
+          width: 90px;
+          display: flex;
+          width: 100px;
+          height: 30px;
+          padding: 6px 30px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          color: var(--white, #fff);
+          text-align: center;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+.NavProductBlock {
+  z-index: 111;
+  display: flex;
+  position: absolute;
+  width: -webkit-fill-available;
+  background: rgba(22, 22, 22, 0.95);
+}
+.NavProduct {
+  display: flex;
+  gap: 100px;
+  position: relative;
+  display: flex;
+  padding: 0px;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  ul {
+    margin: 0;
+    gap: 18px !important;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    li {
+      text-align: left !important;
+      color: #000 !important;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      a {
+        color: var(--white, #fff);
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+  }
+}
+.NavKnowledgeBlock {
+  z-index: 111;
+  display: flex;
+  position: absolute;
+  width: -webkit-fill-available;
+  background: rgba(22, 22, 22, 0.95);
+}
+
+.NavKnowledgeBlockVisible {
+  display: none;
+}
+
+.Login {
+  cursor: pointer !important;
+}
+.LogoCopyAll {
+  display: none;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--maxWidth);
+  padding: 0 var(--pageP);
+  margin: 0 auto;
+  .ImageEvro {
+    width: 70px;
+  }
+
+  @media screen and (max-width: 1478px) {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    align-items: center;
+    align-items: center;
+    justify-content: flex-end;
+    @media screen and (max-width: 547px) {
+      gap: 0px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 70px;
+      @media screen and (max-width: 547px) {
+        width: 50px;
+      }
+    }
+  }
+}
+
+.LogoCopy {
+  display: flex;
+  gap: 10px;
+  img {
+    width: 70px;
+  }
+}

@@ -1,0 +1,83 @@
+.menu {
+  z-index: 1111111111;
+  display: flex;
+  position: absolute;
+  width: -webkit-fill-available;
+  overflow: scroll;
+  background: rgba(22, 22, 22, 0.95);
+  min-height: 100vh;
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 500px) {
+  }
+
+  .Call {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    background-color: #0000;
+    cursor: pointer;
+    border: none;
+    svg {
+      width: 48px;
+      color: #fff;
+      height: 48px;
+    }
+  }
+
+  .menuNav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 30px;
+    margin-top: 98px;
+
+    li {
+      color: #ffffff;
+      list-style: none;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 30.05px;
+      text-align: left;
+      gap: 10px;
+      position: relative;
+      cursor: pointer;
+      svg {
+        position: absolute;
+        margin-left: 10px;
+        top: 5px;
+      }
+      a {
+        color: #ffffff;
+        list-style: none;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30.05px;
+        text-align: left;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        li {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 24.59px;
+          text-align: left;
+          a {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24.59px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      margin-top: 70px;
+      margin-left: 10px;
+    }
+  }
+}

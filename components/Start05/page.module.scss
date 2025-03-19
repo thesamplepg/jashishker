@@ -1,0 +1,122 @@
+.start05 {
+  margin-top: 100px;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 40px;
+  }
+
+  .desktop {
+    width: 100%;
+    height: auto;
+    margin-top: -12%;
+
+    @media screen and (max-width: 600px) {
+      display: none
+    }
+  }
+
+  .mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+  }
+
+  .start05Content {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    @media screen and (max-width: 1024px) {
+      gap: 10px;
+    }
+
+    p {
+      color: var(--Text-color, #222);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      max-width: 583px;
+      margin: 0 0 0 160px;
+      @media screen and (max-width: 1210px) {
+        margin: 0 0 0 90px;
+        font-size: 16px;
+        max-width: 500px;
+
+        }
+
+      @media screen and (max-width: 1024px) {
+        max-width: 345px;
+        margin: 0 0 0 83px;
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 600px) {
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+
+    .start05ContentTitle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      @media screen and (max-width: 600px) {
+        gap: 30px;
+      }
+
+      span {
+        color: var(--black, #161616);
+        text-align: center;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 50px;
+        }
+
+        @media screen and (max-width: 600px) {
+          font-size: 36px;
+        }
+      }
+
+      h2 {
+        color: #191A1B;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        margin: 0;
+        max-width: 700px;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 26px;
+          max-width: 476px;
+
+        }
+
+        @media screen and (max-width: 600px) {
+          font-size: 22px;
+          max-width: 270px;
+        }
+      }
+
+
+    }
+
+  }
+
+}

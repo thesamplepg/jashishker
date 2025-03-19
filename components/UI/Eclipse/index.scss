@@ -1,0 +1,27 @@
+.ui-eclipse {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  position: absolute;
+  background-color: var(--light-green);
+  z-index: 1;
+}
+
+.ui-eclipse_inner-circle {
+  background-color: var(--green);
+  border-radius: 1000px;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.72);
+}
+
+.ui-eclipse--light {
+  background-color: var(--light-green);
+
+  .ui-eclipse_inner-circle {
+    background-color: white;
+  }
+}
