@@ -8,7 +8,7 @@ import TrText from "@/components/TrText/TrText";
 const Documents = () => {
   return (
     <section className="bp-documents">
-      <Eclipse className="eclipse" isLight={true} />
+      {/* <Eclipse className="eclipse" isLight={true} /> */}
       <div className="container">
         <h2 className="bp-documents_title">
           <TrText root="bp" name="documents_title" />
