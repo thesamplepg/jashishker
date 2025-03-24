@@ -221,13 +221,15 @@ const Haeder = () => {
           <div className={s.NavProduct}>
             <ul>
               <li>
-                <Link className={s.Link} href={"/about"}>
-                  {t("navbar_about")}
-                </Link>
-              </li>
-              <li>
                 <Link className={s.Link} href={"/business-program"}>
                   {t("navbar_about_bp")}
+                </Link>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <Link className={s.Link} href={"/about"}>
+                  {t("navbar_about")}
                 </Link>
               </li>
               <li>
