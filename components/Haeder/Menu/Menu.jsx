@@ -57,6 +57,11 @@ const Menu = ({ isMenu, setMenu }) => {
                   </Link>
                 </li>
                 <li>
+                  <Link className={s.Link} href={"/business-program"}>
+                    <Text name={"navbar_about_bp"} />{" "}
+                  </Link>
+                </li>
+                <li>
                   <Link className={s.Link} href={"/Economy"}>
                     <Text name={"navbar_about_green_economy"} />
                   </Link>
@@ -87,13 +92,13 @@ const Menu = ({ isMenu, setMenu }) => {
                     <Text name={"navbar_about_digital"} />
                   </Link>
                 </li>
+                <li>
+                  <Link className={s.Link} href={"/business-program"}>
+                    <Text name={"navbar_about_bp"} />
+                  </Link>
+                </li>
               </motion.ul>
             )}
-          </li>
-          <li>
-            <Link className={s.Link} href={"/business-program"}>
-              <Text name={"navbar_about_bp"} />
-            </Link>
           </li>
           <li>
             <Link className={s.Link} href={"/news"}>
